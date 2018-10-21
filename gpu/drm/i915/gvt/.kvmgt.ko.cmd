@@ -1,0 +1,1 @@
+cmd_/home/alex/src/i915-nolvds/gpu/drm/i915/gvt/kvmgt.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T ./scripts/module-common.lds  --build-id  -o /home/alex/src/i915-nolvds/gpu/drm/i915/gvt/kvmgt.ko /home/alex/src/i915-nolvds/gpu/drm/i915/gvt/kvmgt.o /home/alex/src/i915-nolvds/gpu/drm/i915/gvt/kvmgt.mod.o ;  true
