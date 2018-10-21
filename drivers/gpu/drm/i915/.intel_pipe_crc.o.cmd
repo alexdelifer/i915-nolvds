@@ -1,8 +1,8 @@
-cmd_/home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_pipe_crc.o := gcc -Wp,-MD,/home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/.intel_pipe_crc.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -DCC_HAVE_ASM_GOTO -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -march=sandybridge -mno-red-zone -mcmodel=kernel -funit-at-a-time -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -DRETPOLINE -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-int-in-bool-context -O2 --param=allow-store-data-races=0 -Wframe-larger-than=2048 -fstack-protector-strong -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-var-tracking-assignments -pg -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=./= -Wno-packed-not-aligned -Wall -Wextra -Wvla -Wno-unused-parameter -Wno-type-limits -Wno-missing-field-initializers -Wno-implicit-fallthrough -Wno-unused-but-set-variable -Wno-sign-compare -DCONFIG_AS_MOVNTDQA -mrecord-mcount -I/home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915 -I/home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/gvt  -DMODULE  -DKBUILD_BASENAME='"intel_pipe_crc"' -DKBUILD_MODNAME='"i915"' -c -o /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/.tmp_intel_pipe_crc.o /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_pipe_crc.c
+cmd_/home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_pipe_crc.o := gcc -Wp,-MD,/home/alex/src/i915-nolvds/drivers/gpu/drm/i915/.intel_pipe_crc.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -DCC_HAVE_ASM_GOTO -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -march=sandybridge -mno-red-zone -mcmodel=kernel -funit-at-a-time -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -DRETPOLINE -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-int-in-bool-context -O2 --param=allow-store-data-races=0 -Wframe-larger-than=2048 -fstack-protector-strong -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-var-tracking-assignments -pg -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=./= -Wno-packed-not-aligned -Wall -Wextra -Wvla -Wno-unused-parameter -Wno-type-limits -Wno-missing-field-initializers -Wno-implicit-fallthrough -Wno-unused-but-set-variable -Wno-sign-compare -DCONFIG_AS_MOVNTDQA -mrecord-mcount -I/home/alex/src/i915-nolvds/drivers/gpu/drm/i915 -I/home/alex/src/i915-nolvds/drivers/gpu/drm/i915/gvt  -DMODULE  -DKBUILD_BASENAME='"intel_pipe_crc"' -DKBUILD_MODNAME='"i915"' -c -o /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/.tmp_intel_pipe_crc.o /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_pipe_crc.c
 
-source_/home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_pipe_crc.o := /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_pipe_crc.c
+source_/home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_pipe_crc.o := /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_pipe_crc.c
 
-deps_/home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_pipe_crc.o := \
+deps_/home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_pipe_crc.o := \
   include/linux/kconfig.h \
     $(wildcard include/config/cpu/big/endian.h) \
     $(wildcard include/config/booger.h) \
@@ -770,7 +770,7 @@ deps_/home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i91
   include/linux/ctype.h \
   include/linux/debugfs.h \
     $(wildcard include/config/debug/fs.h) \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_drv.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_drv.h \
     $(wildcard include/config/drm/i915/debug.h) \
     $(wildcard include/config/drm/fbdev/emulation.h) \
     $(wildcard include/config/backlight/class/device.h) \
@@ -838,7 +838,7 @@ deps_/home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i91
   include/uapi/drm/i915_drm.h \
   include/uapi/drm/drm.h \
   include/uapi/drm/drm_mode.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_drv.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_drv.h \
   include/uapi/drm/drm_fourcc.h \
   include/linux/io-mapping.h \
     $(wildcard include/config/have/atomic/iomap.h) \
@@ -1314,57 +1314,57 @@ deps_/home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i91
     $(wildcard include/config/not/coherent/cache.h) \
     $(wildcard include/config/mips.h) \
     $(wildcard include/config/cpu/loongson3.h) \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_params.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_params.h \
     $(wildcard include/config/drm/i915/alpha/support.h) \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_reg.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_utils.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_bios.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_device_info.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_display.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_dpll_mgr.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_lrc.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_ringbuffer.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_reg.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_utils.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_bios.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_device_info.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_display.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_dpll_mgr.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_lrc.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_ringbuffer.h \
   include/linux/hashtable.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_gem_batch_pool.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_pmu.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_request.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_gem.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_gem_batch_pool.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_pmu.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_request.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_gem.h \
     $(wildcard include/config/drm/i915/debug/gem.h) \
     $(wildcard include/config/drm/i915/trace/gem.h) \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_scheduler.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_sw_fence.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_scheduler.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_sw_fence.h \
     $(wildcard include/config/drm/i915/sw/fence/debug/objects.h) \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_selftest.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_selftest.h \
     $(wildcard include/config/drm/i915/selftest.h) \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_timeline.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_syncmap.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_gpu_commands.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_gem_context.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_opregion.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_uncore.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_wopcm.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_uc.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_guc.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_guc_fw.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_guc_fwif.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_guc_ct.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_guc_log.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_timeline.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_syncmap.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_gpu_commands.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_gem_context.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_opregion.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_uncore.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_wopcm.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_uc.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_guc.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_guc_fw.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_guc_fwif.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_guc_ct.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_guc_log.h \
   include/linux/relay.h \
     $(wildcard include/config/relay.h) \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_guc_reg.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_uc_fw.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_vma.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_gem_gtt.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_guc_reg.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_uc_fw.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_vma.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_gem_gtt.h \
   include/linux/pagevec.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_gem_fence_reg.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_gem_object.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_huc.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_huc_fw.h \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_gpu_error.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_gem_fence_reg.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_gem_object.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_huc.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_huc_fw.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_gpu_error.h \
     $(wildcard include/config/drm/i915/capture/error.h) \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_gvt.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_gvt.h \
     $(wildcard include/config/drm/i915/gvt.h) \
-  /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_trace.h \
+  /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_trace.h \
     $(wildcard include/config/drm/i915/low/level/tracepoints.h) \
   include/linux/tracepoint.h \
     $(wildcard include/config/have/syscall/tracepoints.h) \
@@ -1381,6 +1381,6 @@ deps_/home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i91
   include/drm/drm_dp_helper.h \
   include/drm/drm_atomic.h \
 
-/home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_pipe_crc.o: $(deps_/home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_pipe_crc.o)
+/home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_pipe_crc.o: $(deps_/home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_pipe_crc.o)
 
-$(deps_/home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_pipe_crc.o):
+$(deps_/home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_pipe_crc.o):

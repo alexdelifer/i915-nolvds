@@ -1,5 +1,4 @@
-intel_pm.o: \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_pm.c \
+intel_pm.o: /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_pm.c \
  include/linux/kconfig.h include/generated/autoconf.h \
  include/linux/compiler_types.h include/linux/compiler-gcc.h \
  include/linux/cpufreq.h include/linux/clk.h include/linux/err.h \
@@ -278,7 +277,7 @@ intel_pm.o: \
  include/linux/pci-dma-compat.h include/drm/drm_file.h \
  include/drm/drm_debugfs.h include/drm/drm_ioctl.h \
  include/drm/drm_sysfs.h include/drm/drm_vblank.h include/drm/drm_irq.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_drv.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_drv.h \
  include/uapi/drm/i915_drm.h include/linux/io-mapping.h \
  include/linux/i2c-algo-bit.h include/linux/intel-iommu.h \
  include/linux/iova.h include/linux/dma_remapping.h \
@@ -327,56 +326,56 @@ intel_pm.o: \
  include/uapi/linux/xattr.h include/drm/intel-gtt.h \
  include/drm/drm_legacy.h include/drm/drm_auth.h include/drm/drm_gem.h \
  include/drm/drm_vma_manager.h include/drm/drm_cache.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_params.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_reg.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_utils.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_bios.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_device_info.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_display.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_dpll_mgr.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_lrc.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_ringbuffer.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_params.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_reg.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_utils.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_bios.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_device_info.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_display.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_dpll_mgr.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_lrc.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_ringbuffer.h \
  include/linux/hashtable.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_gem_batch_pool.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_pmu.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_gem_batch_pool.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_pmu.h \
  include/drm/i915_drm.h include/drm/i915_pciids.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_request.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_gem.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_scheduler.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_sw_fence.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_selftest.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_timeline.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_syncmap.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_gpu_commands.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_gem_context.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_opregion.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_uncore.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_wopcm.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_uc.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_guc.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_guc_fw.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_guc_fwif.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_guc_ct.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_guc_log.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_request.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_gem.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_scheduler.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_sw_fence.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_selftest.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_timeline.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_syncmap.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_gpu_commands.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_gem_context.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_opregion.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_uncore.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_wopcm.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_uc.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_guc.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_guc_fw.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_guc_fwif.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_guc_ct.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_guc_log.h \
  include/linux/relay.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_guc_reg.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_uc_fw.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_vma.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_gem_gtt.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_guc_reg.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_uc_fw.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_vma.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_gem_gtt.h \
  include/linux/pagevec.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_gem_fence_reg.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_gem_object.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_huc.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_huc_fw.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_gpu_error.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_gvt.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/i915_trace.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_gem_fence_reg.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_gem_object.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_huc.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_huc_fw.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_gpu_error.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_gvt.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/i915_trace.h \
  include/linux/tracepoint.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/intel_drv.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/intel_drv.h \
  include/linux/async.h include/linux/sched/clock.h \
  include/drm/drm_crtc_helper.h include/drm/drm_fb_helper.h \
  include/drm/drm_dp_dual_mode_helper.h include/drm/drm_dp_mst_helper.h \
  include/drm/drm_dp_helper.h include/drm/drm_atomic.h \
  include/trace/define_trace.h \
- /home/alex/linux-zen-dank-nolvds/source/usr/lib/modules/drivers/gpu/drm/i915/../../../platform/x86/intel_ips.h \
+ /home/alex/src/i915-nolvds/drivers/gpu/drm/i915/../../../platform/x86/intel_ips.h \
  include/drm/drm_atomic_helper.h
