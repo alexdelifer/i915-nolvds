@@ -13,3 +13,12 @@ make M="$i915-nolvds"
 insmod $i915-nolvds/i915.ko
 
 ```
+
+or 
+
+```
+sudo ./build.sh # sudo build cause kernel headers have strict perms
+sudo ./install.sh # this will overwrite your i915.ko.xz with the one you just built
+# if i915 isn't loaded you can insmod it right away
+sudo ./run.sh
+```
