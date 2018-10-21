@@ -6,7 +6,7 @@ It's really simple, instead of rebuilding your kernel every time there's an upda
 ```
 sudo ./build.sh # sudo build cause kernel headers have strict perms
 sudo ./install.sh # this will overwrite your i915.ko.xz with the one you just built
-# if i915 isn't loaded you can insmod it right away
+# if i915 isn't loaded you can insmod it right away, otherwise reboot now to load the new i915.
 sudo ./run.sh
 ```
 

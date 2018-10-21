@@ -1,0 +1,11 @@
+diff --git a/drivers/gpu/drm/i915/i915_trace.h b/drivers/gpu/drm/i915/i915_trace.h
+index 01840d9..5498b37 100644
+--- a/drivers/gpu/drm/i915/i915_trace.h
++++ b/drivers/gpu/drm/i915/i915_trace.h
+@@ -312,5 +312,5 @@  TRACE_EVENT(i915_ring_wait_end,
+ 
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/i915
++#define TRACE_INCLUDE_PATH .
+ #include <trace/define_trace.h>

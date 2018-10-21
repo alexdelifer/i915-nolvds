@@ -15,6 +15,10 @@ rm i915.ko.xz
 cp ${i915nolvds}/gpu/drm/i915/i915.ko ./i915.ko
 xz -z ./i915.ko
 
+if grep -q i915 "/etc/mkinitcpio.conf"; then
+        mkinitcpio -P
+fi
+
 echo "Done!"
 
 #echo "make M=${i915nolvds}/gpu/drm/i915"
