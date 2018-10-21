@@ -3,7 +3,7 @@ for use with x220 fhd mod, aka x320
 
 example:
 ```
-i915-nolvds="/home/somepath/i915-nolvds/drivers/gpu/drm/i915"
+i915-nolvds="/home/somepath/i915-nolvds/gpu/drm/i915"
 cd /usr/lib/modules/$(uname -r)/build/
 make M="$i915-nolvds"
 
