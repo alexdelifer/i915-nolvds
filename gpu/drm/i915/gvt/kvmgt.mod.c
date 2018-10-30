@@ -108,7 +108,7 @@ __attribute__((section("__versions"))) = {
 static const char __module_depends[]
 __used
 __attribute__((section(".modinfo"))) =
-"depends=kvm,mdev,vfio";
+"depends=kvm";
 
 
 MODULE_INFO(srcversion, "1832EC3559EE9A9070FFC3D");

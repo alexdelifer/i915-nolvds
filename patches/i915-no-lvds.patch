@@ -36,4 +36,3 @@ diff -ruN a/drivers/gpu/drm/i915/intel_lvds.c b/drivers/gpu/drm/i915/intel_lvds.
  		},
  	},
  	{
-Binary files zen-kernel/.git/index and dank-kernel/.git/index differ
