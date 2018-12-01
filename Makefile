@@ -30,3 +30,5 @@ install:
 	
 	echo "Done! Reboot to load the new i915 module."
 
+#todo clean:
+#todo all-kernels:
