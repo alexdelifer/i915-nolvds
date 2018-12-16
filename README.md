@@ -8,3 +8,5 @@ sudo make # sudo because kernel-headers belong to root
 sudo make install
 reboot # so module can load
 ```
+
+note: this was tested on arch linux, your mileage may vary.
