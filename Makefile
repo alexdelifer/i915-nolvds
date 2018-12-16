@@ -17,7 +17,12 @@ clean:
 
 uninstall:
 	if [ -f $(CKERNEL)/updates/i915.ko.xz ]; then \
-			rm $(CKERNEL)/updates/i915.ko.xz; fi
+			rm $(CKERNEL)/updates/i915.ko.xz; \
+			fi
+	rmdir $(CKERNEL)/updates || \
+			echo "$(CKERNEL) Not Empty!"; \
+			ls -lah $(CKERNEL)/updates/ || \
+			echo "Nothing to uninstall!"
 
 update:
 	# Clone torvald's repo
