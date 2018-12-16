@@ -15,21 +15,22 @@ clean:
 			find ./ -name "*.rej" -delete
 	make -C $(CKERNEL)/build M="$(LOCALI915)" clean
 
+remove-kernels:
+	rm -rf ./linux-*/ ./linux-*.tar.xz
+
 update:
 	if [ ! -d linux-$(CKERNELVERSION)/ ]; then \
 			wget https://mirrors.edge.kernel.org/pub/linux/kernel/v4.x/linux-$(CKERNELVERSION).tar.xz; \
 			echo "Extracting, please wait..."; \
 			tar xf linux-$(CKERNELVERSION).tar.xz; \
 			rm linux-$(CKERNELVERSION).tar.xz; \
-			# allows building out-of-tree
 			patch --forward -p1 --directory=linux-$(CKERNELVERSION) \
 			< patches/i915-out-of-tree.patch; \
-			# switch eDP-3 with LVDS for modded thinkpads
 			patch --forward -p1 --directory=linux-$(CKERNELVERSION) \
-			< patches/i915-no-lvds.patch; \
+			< patches/i915-no-lvds-multi.patch; \
 			fi
 
-i915.ko.xz: clean update
+i915.ko.xz: update clean
 	echo Building $(LOCAL) using $(CKERNEL)/build
 	make -C $(CKERNEL)/build M="$(LOCALI915)"
 	xz -z $(LOCALI915)/i915.ko
