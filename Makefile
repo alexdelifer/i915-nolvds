@@ -1,13 +1,32 @@
-LOCAL := $(shell pwd)
-CKERNEL := "/usr/lib/modules/$(shell uname -r)"
 DEPENDENCIES := nothing
 default: build
 .PHONY: install
 
-build:
+CKERNEL := "/usr/lib/modules/$(shell uname -r)"
+CKERNELVERSION := $(shell uname -r | cut -d- -f1)
+LOCAL := $(shell pwd)/linux-$(CKERNELVERSION)/drivers
+
+
+clean:
+	cd $(LOCAL); \
+			find ./ -name "*.o" -delete; \
+			find ./ -name "*.ko" -delete; \
+			find ./ -name "*.ko.gz" -delete; \
+			find ./ -name "*.rej" -delete
+	make -C $(CKERNEL)/build M="$(LOCAL)/gpu/drm/i915" clean
+
+update:
+	if [ ! -d linux-$(CKERNELVERSION)/ ]; then \
+			wget https://mirrors.edge.kernel.org/pub/linux/kernel/v4.x/linux-$(CKERNELVERSION).tar.xz; \
+			tar xf linux-$(CKERNELVERSION).tar.xz; \
+			rm linux-$(CKERNELVERSION).tar.xz; \
+			patch --forward -p1 --directory=linux-$(CKERNELVERSION) < patches/i915-out-of-tree.patch; \
+			patch --forward -p1 --directory=linux-$(CKERNELVERSION) < patches/i915-no-lvds.patch; \
+			fi
+
+build: update
 	echo Building $(LOCAL) using $(CKERNEL)/build
-	cd $(CKERNEL)/build; \
-			make M="$(LOCAL)/gpu/drm/i915"
+	make -C $(CKERNEL)/build M="$(LOCAL)/gpu/drm/i915"
 	xz -z $(LOCAL)/gpu/drm/i915/i915.ko
 
 install:

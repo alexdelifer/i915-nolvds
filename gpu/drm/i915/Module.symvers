@@ -1,6 +1,0 @@
-0x08a7896d	i915_gpu_raise	/home/alex/src/i915-nolvds/gpu/drm/i915/i915	EXPORT_SYMBOL_GPL
-0x05876c69	i915_gpu_busy	/home/alex/src/i915-nolvds/gpu/drm/i915/i915	EXPORT_SYMBOL_GPL
-0x402468e9	i915_gpu_lower	/home/alex/src/i915-nolvds/gpu/drm/i915/i915	EXPORT_SYMBOL_GPL
-0x967936c9	kvmgt_mpt	/home/alex/src/i915-nolvds/gpu/drm/i915/gvt/kvmgt	EXPORT_SYMBOL_GPL
-0xe7237b0b	i915_gpu_turbo_disable	/home/alex/src/i915-nolvds/gpu/drm/i915/i915	EXPORT_SYMBOL_GPL
-0x500858b9	i915_read_mch_val	/home/alex/src/i915-nolvds/gpu/drm/i915/i915	EXPORT_SYMBOL_GPL
