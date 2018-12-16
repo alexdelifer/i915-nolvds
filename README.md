@@ -23,8 +23,5 @@ A: No problem.
 ```
 sudo make uninstall
 ```
-Q: Why does this download the entire linux git repo?
-
-A: Because it makes it easy to `git fetch` and `git checkout v4.20.0` or whatever new kernel version is out. Then I just repatch it and we're back in action. If anybody cares, I have a version that downloads a tar.xz from kernel.org and uses that, but I prefer this method.  
 
 Note: This was tested on Arch Linux on a Taobao X220, your mileage may vary.
