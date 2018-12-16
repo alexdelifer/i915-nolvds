@@ -9,6 +9,12 @@ Please make sure your kernel is up to date, and you've rebooted, this is because
 sudo make # sudo because kernel-headers belong to root
 sudo make install
 reboot # so module can load
+
+```
+
+You don't like it? No problem.
+```
+sudo make uninstall
 ```
 
 note: this was tested on arch linux on a taobao x220, your mileage may vary.
