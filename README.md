@@ -4,10 +4,8 @@ for use with x220 fhd mod, aka x320
 It's really simple, instead of rebuilding your kernel every time there's an update, or being locked in to using just 1 kernel, now you can just rebuild this i915 against your own kernel headers.
 
 ```
-sudo ./build.sh # sudo build cause kernel headers have strict perms
-sudo ./install.sh # this will overwrite your i915.ko.xz with the one you just built
-# if i915 isn't loaded you can insmod it right away, otherwise reboot now to load the new i915.
-sudo ./run.sh
+sudo make
+sudo make install
 ```
 
 or manually...
