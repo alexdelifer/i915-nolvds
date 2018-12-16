@@ -11,4 +11,4 @@ sudo make install
 reboot # so module can load
 ```
 
-note: this was tested on arch linux, your mileage may vary.
+note: this was tested on arch linux on a taobao x220, your mileage may vary.
