@@ -3,3 +3,5 @@
 *.ko.gz
 linux/
 linux/*
+linux-*/
+linux-*/*
