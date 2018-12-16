@@ -17,18 +17,21 @@ clean:
 			find ./ -name "*.ko.gz" -delete; \
 			find ./ -name "*.rej" -delete
 	make -C $(CKERNEL)/build M="$(LOCALI915)" clean
+	echo "$(LOCALKERNEL) cleaned!"
 
 uninstall:
 	if [ -f $(CKERNEL)/updates/i915.ko.xz ]; then \
 			rm $(CKERNEL)/updates/i915.ko.xz; \
+			echo "$(CKERNEL)/updates/i915.ko.xz deleted."
 			fi
 	rmdir $(CKERNEL)/updates || \
-			echo "$(CKERNEL) Not Empty!"; \
+			echo "$(CKERNEL) not empty!"; \
 			ls -lah $(CKERNEL)/updates/ || \
 			echo "Nothing to uninstall!"
 
 download:
 	if [ ! -d $(LOCALKERNEL)/ ]; then \
+			echo "Downloading Linux kernel source for v$(CKERNELVERSION)"; \
 			git clone --depth=1 --branch v$(CKERNELVERSION) \
 				https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git $(LOCALKERNEL); \
 				fi
