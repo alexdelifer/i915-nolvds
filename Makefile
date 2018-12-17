@@ -22,7 +22,7 @@ clean:
 uninstall:
 	if [ -f $(CKERNEL)/updates/i915.ko.xz ]; then \
 			rm $(CKERNEL)/updates/i915.ko.xz; \
-			echo "$(CKERNEL)/updates/i915.ko.xz deleted."
+			echo "$(CKERNEL)/updates/i915.ko.xz deleted."; \
 			fi
 	rmdir $(CKERNEL)/updates || \
 			echo "$(CKERNEL) not empty!"; \
@@ -38,11 +38,11 @@ download:
 
 patch: download
 	# Patch to allow building "out-of-tree"	
-	patch --forward -p1 --directory=linux-$(CKERNELVERSION) \
+	patch --forward -p1 --directory=$(LOCALKERNEL) \
 			< patches/i915-out-of-tree.patch || \
 			echo "Already patched."
 	# Patch to disable ghost LVDS display in i915 for x220/x230
-	patch --forward -p1 --directory=linux-$(CKERNELVERSION) \
+	patch --forward -p1 --directory=$(LOCALKERNEL) \
 			< patches/i915-no-lvds-multi.patch || \
 			echo "Already patched"
 
@@ -58,7 +58,8 @@ install: uninstall
 			mkdir $(CKERNEL)/updates; fi
 		
 	cp $(LOCALI915)/i915.ko.xz \
-			$(CKERNEL)/updates/i915.ko.xz
+			$(CKERNEL)/updates/i915.ko.xz && \
+			echo "Installed modded i915.ko to $(CKERNEL)/updates/i915.ko.xz"
 		
 	depmod
 		
