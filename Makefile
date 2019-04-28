@@ -3,8 +3,14 @@ default: i915
 .PHONY: install
 .SILENT: clean uninstall patch download install i915
 
-CKERNEL := "/usr/lib/modules/$(shell uname -r)"
-CKERNELVERSION := $(shell uname -r | cut -d- -f1)
+ifeq ($(KVER),)
+KVER := "$(shell uname -r)"
+endif
+
+#CKERNEL := "/usr/lib/modules/$(shell uname -r)"
+CKERNEL := "/usr/lib/modules/$(KVER)"
+#CKERNELVERSION := $(shell uname -r | cut -d- -f1)
+CKERNELVERSION := $(shell echo $(KVER) | cut -d- -f1)
 # 4.14.8
 LOCALKERNEL := $(shell pwd)/linux-$(CKERNELVERSION)
 # ./linux-4.14.8
@@ -17,6 +23,7 @@ clean:
 			find ./ -name "*.ko.gz" -delete; \
 			find ./ -name "*.rej" -delete
 	make -C $(CKERNEL)/build M="$(LOCALI915)" clean
+	rm -rf ./linux-*/
 	echo "$(LOCALKERNEL) cleaned!"
 
 uninstall:
@@ -47,9 +54,11 @@ patch: download
 			echo "Already patched"
 
 # default target
-i915: patch clean
+i915: patch
 	echo Building $(LOCAL) using $(CKERNEL)/build
 	make -C $(CKERNEL)/build M="$(LOCALI915)"
+	cp $(LOCALI915)/i915.ko \
+		./i915.ko
 	xz -z $(LOCALI915)/i915.ko
 
 install: uninstall
@@ -62,9 +71,5 @@ install: uninstall
 			echo "Installed modded i915.ko to $(CKERNEL)/updates/i915.ko.xz"
 		
 	depmod
-		
-	if grep -q i915 '/etc/mkinitcpio.conf'; then \
-		mkinitcpio -P; \
-		fi;
 	
 	echo "Done! Reboot to load the new i915 module."
