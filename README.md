@@ -33,12 +33,10 @@ Don't like it? No problem.
 ### DKMS
 ```
 sudo ./dkms-remove.sh
-
 ```
 
 ### Make
 ```
-
 sudo make uninstall
 ```
 
