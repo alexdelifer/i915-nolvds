@@ -1,4 +1,7 @@
 # i915-nolvds
+
+I bricked by laptop flashing coreboot :( I don't use this anymore. Good luck!
+
 For use with x220/x230 nitrocaster or K.K. fhd mod. If you want to disable LVDS ghost display in linux, this is what you want. 
 
 It's really simple, instead of rebuilding your kernel every time there's an update, or being locked in to using just 1 kernel, now you can just rebuild this i915 against your own kernel headers.
